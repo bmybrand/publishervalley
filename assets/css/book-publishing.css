@@ -83,7 +83,7 @@
 .bp-page .btn-ghost-ink { background: transparent; color: var(--text-on-ink) !important; border-color: var(--line-ink); }
 .bp-page .btn-ghost-ink:hover { border-color: var(--gold-soft); color: var(--gold-soft) !important; }
 .bp-page .btn-gold { background: var(--gold); color: #000 !important; font-weight: 700; }
-.bp-page .btn-gold:hover { background: #e0840e; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(248,153,27,0.3); }
+.bp-page .btn-gold:hover { background: #e0840e; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(216, 182, 94,0.3); }
 
 /* ---------- TRUST BAR ---------- */
 .bp-page .trustbar {
@@ -305,7 +305,7 @@
 .bp-page .vs-card li:last-child { border-bottom: none; }
 .bp-page .mark-x, .bp-page .mark-check { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
 .bp-page .mark-x { background: rgba(225, 29, 72, 0.12); color: #e11d48; }
-.bp-page .mark-check { background: rgba(248, 153, 27, 0.2); color: var(--gold); }
+.bp-page .mark-check { background: rgba(216, 182, 94, 0.2); color: var(--gold); }
 .bp-page .vs-badge {
   align-self: center; width: 56px; height: 56px; border-radius: 50%;
   background: var(--crimson); color: #fff; font-family: 'Poppins', serif; font-weight: 700; font-size: 14px;
@@ -385,6 +385,7 @@
 .bp-page .urgent h2 { color: #fff; font-size: 28px; }
 .bp-page .urgent p { color: rgba(255,255,255,.86); max-width: 520px; font-size: 15.5px; }
 .bp-page .urgent-tag { font-family: 'Poppins', sans-serif; font-size: 12px; letter-spacing: .1em; background: rgba(239, 214, 139, 0.14); color: var(--gold-soft); display: inline-block; padding: 6px 14px; border-radius: 999px; margin-bottom: 14px; font-weight: 600; }
+.bp-page .urgent > div:last-child { display: flex; justify-content: flex-end; }
 @media (max-width:760px){ .bp-page .urgent { grid-template-columns: 1fr; padding: 34px 26px; } }
 
 /* ---------- PORTFOLIO COVER CARDS ---------- */

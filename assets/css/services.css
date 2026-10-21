@@ -1665,7 +1665,7 @@ details.pv-faq-item[open] summary {
 
 /* Final CTA Box */
 .cpb-final-cta {
-  background: radial-gradient(circle at 20% 20%, #F6934F, var(--cpb-orange-dark));
+  background: radial-gradient(circle at 20% 20%, #d8b65e, var(--cpb-orange-dark));
   color: #fff;
   border-radius: 24px;
   padding: 56px 40px;

@@ -125,6 +125,9 @@
       form = newCard.querySelector("form");
     }
 
-    if (form) updateForm(form, siteUrl);
+    if (form) {
+      updateForm(form, siteUrl);
+      form.closest(".hero-offer-form")?.setAttribute("data-service-form-ready", "");
+    }
   });
 })();

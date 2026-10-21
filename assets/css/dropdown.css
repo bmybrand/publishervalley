@@ -71,18 +71,18 @@
     width: 65px;
     height: 65px;
     background: #fff;
-    border: 1.5px solid #f8991b;
+    border: 1.5px solid #d8b65e;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 4px 10px rgba(248, 153, 27, 0.1);
+    box-shadow: 0 4px 10px rgba(216, 182, 94, 0.1);
 }
 
 .mega-menu-list .icon-box i {
-    color: #f8991b;
+    color: #d8b65e;
     font-size: 28px;
 }
 
@@ -110,9 +110,9 @@
 }
 
 .mega-menu-list li a:hover .icon-box {
-    background: #f8991b;
+    background: #d8b65e;
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(248, 153, 27, 0.3);
+    box-shadow: 0 8px 20px rgba(216, 182, 94, 0.3);
 }
 
 .mega-menu-list li a:hover .icon-box i {
@@ -120,7 +120,7 @@
 }
 
 .mega-menu-list li a:hover .text-box h5 {
-    color: #f8991b;
+    color: #d8b65e;
 }
 
 /* Border between columns */
@@ -140,7 +140,7 @@
 }
 
 .header-main .navbar-menu .nav-items .nav-links a:hover {
-    color: #f8991b;
+    color: #d8b65e;
 }
 
 /* Fix for link color in dropdown */
