@@ -339,6 +339,74 @@
   color: #ffffff !important;
 }
 
+/* High-contrast dark service panels. Several legacy page-level styles use the
+   old blue palette, which becomes difficult to read on the Valley plum theme. */
+.pv-section-dark .pv-n-card {
+  background: #321337 !important;
+  border-color: rgba(216, 182, 94, 0.35) !important;
+}
+.pv-section-dark .pv-n-card .voice-wave i {
+  background: #d8b65e !important;
+}
+.pv-section-dark .pv-n-card h4 {
+  color: #ffffff !important;
+}
+.pv-section-dark .pv-n-card p {
+  color: #f4edf5 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+.pv-section-dark .pv-n-card .genres {
+  color: #f6e4ae !important;
+  font-size: 0.72rem !important;
+}
+.pv-meter {
+  border: 1px solid rgba(216, 182, 94, 0.4) !important;
+  background: #2b102f !important;
+}
+.pv-meter h4,
+.pv-meter-row .lbl {
+  color: #ffffff !important;
+}
+.pv-meter > p {
+  color: #f4edf5 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+.pv-process-side {
+  border: 1px solid rgba(216, 182, 94, 0.4) !important;
+  background: #2b102f !important;
+}
+.pv-process-side .pv-eyebrow.on-dark,
+.pv-process-side .pv-chip.on-dark {
+  color: #f6e4ae !important;
+}
+.pv-process-side p {
+  color: #f4edf5 !important;
+  line-height: 1.7 !important;
+}
+.pv-process-side .pv-btn-blue {
+  color: #260f2a !important;
+  border-color: #d8b65e !important;
+  background: linear-gradient(135deg, #a98235, #f6e4ae 55%, #d8b65e) !important;
+}
+.pv-tech-col.featured {
+  border-color: rgba(216, 182, 94, 0.4) !important;
+  background: #2b102f !important;
+}
+.pv-tech-col.featured .pv-tech-best {
+  color: #f6e4ae !important;
+}
+.pv-tech-col.featured h3 {
+  color: #ffffff !important;
+}
+.pv-tech-col.featured li {
+  color: #f4edf5 !important;
+}
+.pv-tech-col.featured li::before {
+  color: #d8b65e !important;
+}
+
 /* Dark sections always get white outline text */
 .pv-section-dark .pv-btn-outline,
 .pv-hero-dark .pv-btn-outline,

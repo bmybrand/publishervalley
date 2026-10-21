@@ -1,6 +1,10 @@
 /* Shared presentation for About, Portfolio, Testimonials, and Contact. */
 .pv-main-page{--mp-ink:#260f2a;--mp-plum:#401945;--mp-gold:#d8b65e;--mp-gold-soft:#f6e4ae;--mp-ivory:#fffaf0;--mp-paper:#fff;--mp-copy:#5c4d5e;--mp-line:#e8dfd0;background:var(--mp-ivory);color:var(--mp-ink);font-family:'Poppins',sans-serif}
 .pv-main-page *,.pv-main-page *::before,.pv-main-page *::after{box-sizing:border-box}
+.pv-main-page .service-hero .hero-grid{grid-template-columns:minmax(0,920px);justify-content:start}
+.pv-main-page .service-hero .hero-content{max-width:920px}
+.pv-main-page .service-hero .lead-text{max-width:760px}
+.pv-main-page .service-hero .hero-stats{max-width:820px}
 .pv-main-page .mp-section{padding:88px 0}
 .pv-main-page .mp-section.alt{background:#f8efdc;border-block:1px solid var(--mp-line)}
 .pv-main-page .mp-section.dark{color:var(--mp-ivory);background:linear-gradient(135deg,var(--mp-ink),var(--mp-plum))}
