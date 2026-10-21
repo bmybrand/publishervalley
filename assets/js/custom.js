@@ -7,6 +7,87 @@ document.querySelectorAll(
   icon.classList.add('fab');
 });
 
+// Add a shared service picker to the consultation modal. On service pages,
+// the matching service starts selected but remains fully editable by visitors.
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('launchBookForm');
+
+  if (!form || form.querySelector('.pv-service-picker')) {
+    return;
+  }
+
+  var services = [
+    'Ghostwriting',
+    'Book Writing',
+    'Book Editing',
+    'Proofreading',
+    'Book Publishing',
+    'Amazon Publishing',
+    "Children's Book Publishing",
+    'Book Cover Design',
+    'Book Formatting',
+    'Book Marketing',
+    'Author Website Design',
+    'Audiobook Services',
+    "Children's Book Illustration"
+  ];
+
+  var serviceByPath = {
+    '/ghost-writing/': ['Ghostwriting'],
+    '/book-writing/': ['Book Writing'],
+    '/book-editing/': ['Book Editing'],
+    '/book-developmental-editing-services/': ['Book Editing'],
+    '/book-line-editing-services/': ['Book Editing'],
+    '/proofreading-services/': ['Proofreading'],
+    '/book-publishing/': ['Book Publishing'],
+    '/amazon-publishing/': ['Amazon Publishing'],
+    '/children-picture-book-publishing/': ["Children's Book Publishing"],
+    '/book-cover-design/': ['Book Cover Design'],
+    '/book-formatting/': ['Book Formatting'],
+    '/book-marketing/': ['Book Marketing'],
+    '/author-website-design/': ['Author Website Design'],
+    '/audiobook-services/': ['Audiobook Services'],
+    '/children-picture-book-illustration/': ["Children's Book Illustration"],
+    '/book-publishing-and-ghostwriting-in-houston-tx/': ['Book Publishing', 'Ghostwriting']
+  };
+
+  var path = window.location.pathname.replace(/\/+$/, '/') || '/';
+  var selectedServices = serviceByPath[path] || [];
+  var picker = document.createElement('fieldset');
+  picker.className = 'pv-service-picker';
+
+  var legend = document.createElement('legend');
+  legend.textContent = 'Services you are interested in';
+  picker.appendChild(legend);
+
+  var grid = document.createElement('div');
+  grid.className = 'pv-service-picker-grid';
+
+  services.forEach(function (service) {
+    var label = document.createElement('label');
+    label.className = 'pv-service-choice';
+
+    var checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.name = 'services[]';
+    checkbox.value = service;
+    checkbox.checked = selectedServices.indexOf(service) !== -1;
+
+    var text = document.createElement('span');
+    text.textContent = service;
+
+    label.appendChild(checkbox);
+    label.appendChild(text);
+    grid.appendChild(label);
+  });
+
+  picker.appendChild(grid);
+
+  var messageGroup = form.querySelector('textarea');
+  messageGroup = messageGroup ? messageGroup.closest('.form-group') : null;
+  form.insertBefore(picker, messageGroup || form.querySelector('.btn-submit-modal'));
+});
+
 // Animations call 
 
 // AOS.init({

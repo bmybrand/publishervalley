@@ -505,6 +505,98 @@ body {
     object-position: center;
 }
 
+/* Give the genre showcase the same centered content width and breathing room
+   as the adjacent editorial sections. */
+.our-books {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 11;
+}
+
+.our-books .container {
+    width: 100%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.our-books .lists .tab-content .content {
+    padding-right: clamp(0px, 2.5vw, 34px);
+}
+
+/* Shared service choices inside the lead modal. */
+.launch-modal .pv-service-picker {
+    min-width: 0;
+    margin: 0 0 18px;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+
+.launch-modal .pv-service-picker legend {
+    float: none;
+    width: auto;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #f6e4ae;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.launch-modal .pv-service-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.launch-modal .pv-service-choice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    margin: 0;
+    padding: 8px 10px;
+    border: 1px solid rgba(216, 182, 94, 0.35);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.25;
+    cursor: pointer;
+}
+
+.launch-modal .pv-service-choice:has(input:checked) {
+    border-color: #d8b65e;
+    background: rgba(216, 182, 94, 0.18);
+}
+
+.launch-modal .pv-service-choice input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+    accent-color: #d8b65e;
+}
+
+@media (max-width: 767px) {
+    .our-books {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .our-books .lists .tab-content .content {
+        padding-right: 0;
+    }
+
+    .launch-modal .pv-service-picker-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* The testimonial artwork is a transparent product mockup, not a crop. */
 .main-blob-frame {
     width: min(100%, 620px);
