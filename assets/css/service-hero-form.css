@@ -1,0 +1,141 @@
+body .hero-offer-form .offer-header {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 18px 22px;
+}
+
+body .hero-offer-form .offer-header h3 {
+  max-width: 22ch;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+body .hero-offer-form .offer-header p {
+  max-width: 36ch;
+  margin: 0;
+  color: #efd68b;
+  font-size: 0.84rem;
+  font-weight: 500;
+  line-height: 1.45;
+  padding: 0;
+}
+
+body .hero-offer-form .form-body {
+  padding: 20px 24px;
+}
+
+body .hero-offer-form .input-group-custom {
+  margin-bottom: 12px;
+}
+
+body .hero-offer-form .input-group-custom > label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--valley-plum-900, #2b102f);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.hero-offer-form .input-group-custom input,
+.hero-offer-form .input-group-custom select {
+  min-height: 44px;
+}
+
+.hero-offer-form .service-form-options {
+  min-width: 0;
+  margin: 2px 0 14px;
+  padding: 0;
+  border: 0;
+}
+
+.hero-offer-form .service-form-options legend {
+  float: none;
+  width: auto;
+  margin: 0 0 8px;
+  padding: 0;
+  color: var(--valley-plum-950, #260f2a);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.hero-offer-form .service-form-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.hero-offer-form .service-form-options-grid label {
+  display: flex;
+  min-width: 0;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  padding: 7px 8px;
+  border: 1px solid #eee5d7;
+  border-radius: 7px;
+  background: #fffdf8;
+  color: #423747;
+  font-size: 0.76rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.hero-offer-form .service-form-options-grid input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  margin: 0;
+  accent-color: var(--valley-plum-700, #512054);
+}
+
+.hero-offer-form .service-form-options-grid label:has(input:checked) {
+  border-color: rgba(81, 32, 84, 0.45);
+  background: #f7f0f7;
+}
+
+.hero-offer-form .service-form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 2px 0 14px;
+  color: #514653;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.hero-offer-form .service-form-consent input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin: 2px 0 0;
+  accent-color: var(--valley-plum-700, #512054);
+}
+
+.hero-offer-form .service-form-consent a {
+  color: var(--valley-plum-700, #512054);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  body .hero-offer-form .offer-header,
+  body .hero-offer-form .form-body {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .hero-offer-form .service-form-options-grid {
+    gap: 6px;
+  }
+
+  .hero-offer-form .service-form-options-grid label {
+    padding: 6px;
+    font-size: 0.72rem;
+  }
+}
