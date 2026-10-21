@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/dropdown.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+<link rel="stylesheet" href="/assets/css/pv-buttons.css">
     <!-- Google Tag Manager -->
 
 <!-- End Google Tag Manager -->
@@ -249,7 +250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   /* Custom enhancement styles for Audiobook Services page */
   .service-hero {
     background-image:
-      linear-gradient(135deg, rgba(15, 28, 46, 0.92) 0%, rgba(15, 28, 46, 0.96) 100%),
+      linear-gradient(135deg, rgba(38, 15, 42, 0.92) 0%, rgba(64, 25, 69, 0.96) 100%),
       url('assets/images/services/ebook-writing.webp');
   }
 
@@ -263,28 +264,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     overflow: hidden;
   }
   .pv-vs-col { padding: 38px 34px; }
-  .pv-vs-col.bad { background: #182731; }
-  .pv-vs-col.good { background: linear-gradient(160deg, #1c3038, #12222b); border-left: 1px solid rgba(255,255,255,0.12); }
+  .pv-vs-col.bad { background: #301334; }
+  .pv-vs-col.good { background: linear-gradient(160deg, #401945, #351438); border-left: 1px solid rgba(246,228,174,0.2); }
   .pv-vs-tag { font-family: var(--pv-font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
-  .pv-vs-tag.bad { color: #ff8b6a; }
+  .pv-vs-tag.bad { color: #f6e4ae; }
   .pv-vs-tag.good { color: var(--pv-orange); }
   .pv-vs-col h3 { color: #fff; font-size: 1.2rem; margin: 8px 0 22px; }
   .pv-vs-col ul { display: flex; flex-direction: column; gap: 16px; list-style: none; margin: 0; padding: 0; }
-  .pv-vs-col li { display: flex; gap: 12px; font-size: 0.92rem; line-height: 1.55; color: #a9bccc; }
-  .pv-vs-col.good li { color: #e6e0d0; }
+  .pv-vs-col li { display: flex; gap: 12px; font-size: 0.92rem; line-height: 1.55; color: #e3d8e5; }
+  .pv-vs-col.good li { color: #f4edf5; }
   .pv-vs-col li .ic { flex: none; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; margin-top: 2px; }
-  .pv-vs-col.bad .ic { background: rgba(255,110,80,0.16); color: #ff8b6a; }
-  .pv-vs-col.good .ic { background: rgba(248,153,27,0.18); color: var(--pv-orange); }
+  .pv-vs-col.bad .ic { background: rgba(246,228,174,0.12); color: #f6e4ae; }
+  .pv-vs-col.good .ic { background: rgba(216,182,94,0.2); color: var(--pv-orange); }
   @media (max-width: 760px) {
     .pv-vs-wrap { grid-template-columns: 1fr; }
-    .pv-vs-col.good { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); }
+    .pv-vs-col.good { border-left: none; border-top: 1px solid rgba(246,228,174,0.2); }
   }
 
   /* ACX standards spec table */
   .pv-spec-table { margin-top: 34px; background: var(--pv-ink); color: #fff; border-radius: 16px; padding: 30px 32px; overflow-x: auto; }
   .pv-spec-table table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
-  .pv-spec-table th { text-align: left; font-family: var(--pv-font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pv-blue); padding: 0 14px 12px 0; border-bottom: 1px solid rgba(255,255,255,0.14); }
-  .pv-spec-table td { padding: 13px 14px 13px 0; border-bottom: 1px solid rgba(255,255,255,0.14); color: #b0c4de; }
+  .pv-spec-table th { text-align: left; font-family: var(--pv-font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #f6e4ae; padding: 0 14px 12px 0; border-bottom: 1px solid rgba(246,228,174,0.22); }
+  .pv-spec-table td { padding: 13px 14px 13px 0; border-bottom: 1px solid rgba(246,228,174,0.22); color: #f4edf5; }
   .pv-spec-table tr:last-child td { border-bottom: none; }
   .pv-spec-table td.k { color: #fff; font-weight: 600; }
 
@@ -346,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-grid">
 
         <div class="hero-content">
-          <div class="pv-eyebrow on-dark">Audiobook Services</div>
+          <div class="pv-eyebrow on-dark service-script-eyebrow">Audiobook Services</div>
           <h1>Your Story Deserves a Voice. Our <em>Best Audiobook Services</em> Make It Happen.</h1>
           <p class="lead-text">Audiobooks are the latest book format to revolutionize the publishing industry. You may have spent months, maybe years, getting the words right in your book. The last thing you want is for a flat voice production to drain the life out of it. Publishers Valley offers the best audiobook services in the USA. We handle the full process with professional ACX audiobook production. So your finished book sounds complete and ready for listeners.</p>
 
@@ -959,6 +960,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="/assets/js/jquery.fancybox.min.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
     <script src="/assets/js/video.min.js"></script>
+    <script src="/assets/js/service-hero-form.js"></script>
     <script src="/assets/js/custom.js"></script>
 
     <!-- Launch Your Book Modal -->

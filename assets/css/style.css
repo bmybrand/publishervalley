@@ -1,4 +1,5 @@
 @import url('/assets/css/355ec60b6dc9.css');
+@import url('/assets/css/service-hero-form.css');
 
 @font-face {
   font-family: 'Poppins';
@@ -1770,6 +1771,11 @@ button:hover{
   gap: 4px;
 }
 
+.testimonial-rating-stars .fa-star {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 .testimonial-quote-text {
   font-size: 16px;
   line-height: 1.8;
@@ -2139,7 +2145,9 @@ button.chat {
 
 /* Hero Publishing Design */
 .hero-publishing {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/assets/images/hero-bg.png');
+  background-image:
+    linear-gradient(105deg, rgba(38, 15, 42, 0.96) 0%, rgba(64, 25, 69, 0.9) 54%, rgba(38, 15, 42, 0.88) 100%),
+    url('/assets/images/hero-bg.png');
   background-size: cover;
   background-position: center;
   padding: 150px 0 100px;
@@ -2152,6 +2160,30 @@ button.chat {
   text-align: left;
 }
 
+.service-script-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 14px !important;
+  color: var(--valley-gold-300, #efd68b) !important;
+  font-family: 'Edwardian Script ITC', cursive !important;
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+}
+
+.service-script-eyebrow::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 22px !important;
+  height: 2px !important;
+  flex: 0 0 22px !important;
+  border-radius: 2px !important;
+  background: var(--valley-gold-500, #d8b65e) !important;
+}
+
 .hero-publishing .sub-heading {
   font-size: 20px;
   font-weight: 300;
@@ -2161,8 +2193,9 @@ button.chat {
 }
 
 .hero-publishing h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 10px;
   line-height: 1.3;
   color: #f09016;
@@ -3124,6 +3157,37 @@ marquee h6 {
     align-items: center;
     gap: 16px;
     margin-bottom: 16px;
+}
+
+/* Keep service hero headings consistent with the Book Publishing hero. */
+body .service-hero h1,
+body .hero-bcd .main-about h1,
+body .breadcrump-sec.hero-publishing h1,
+body .bde-page .hero h1,
+body .ble-page .hero h1,
+body .cpb-pub-page .hero h1,
+body .cpb-page .hero h1,
+body .hero[data-service-hero-form] h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.2rem, 4.4vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+body .service-hero h1 em,
+body .hero-bcd .main-about h1 em,
+body .breadcrump-sec.hero-publishing h1 em,
+body .bde-page .hero h1 em,
+body .ble-page .hero h1 em,
+body .cpb-pub-page .hero h1 em,
+body .cpb-page .hero h1 em,
+body .hero[data-service-hero-form] h1 em {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 .pv-feature-icon-box {

@@ -406,6 +406,25 @@
 .pv-tech-col.featured li::before {
   color: #d8b65e !important;
 }
+.pv-voice-card {
+  border-color: rgba(216, 182, 94, 0.4) !important;
+  background: linear-gradient(145deg, #260f2a, #401945) !important;
+}
+.pv-voice-card .quote-mark {
+  color: #f6e4ae !important;
+}
+.pv-voice-card blockquote {
+  color: #ffffff !important;
+}
+.pv-voice-card .author-tag {
+  color: #f6e4ae !important;
+}
+.pv-voice-card .author-tag::before {
+  background: #d8b65e !important;
+}
+.pv-voice-card .pv-waveform span {
+  background: linear-gradient(180deg, #f6e4ae, #d8b65e) !important;
+}
 
 /* Dark sections always get white outline text */
 .pv-section-dark .pv-btn-outline,
@@ -508,6 +527,85 @@ a.pv-btn.pv-btn-outline:hover {
   background: #1a0a1d !important;
   color: #ffffff !important;
   border-color: var(--valley-plum-800, #401945) !important;
+}
+
+/* Site-wide CTA normalization: every call-to-action uses one of two styles.
+   Interactive tabs, filters, and icon-only close controls remain unchanged. */
+.pv-btn:not(.pv-btn-primary):not(.pv-btn-gold):not(.pv-btn-teal):not(.pv-btn-blue):not(.pv-btn-outline):not(.pv-btn-outline-light):not(.pv-btn-ink-outline),
+.btn.btn-primary,
+.btn.btn-gold,
+.btn.btn-sky,
+.btn-hero-slide-trigger,
+.btn-hero-slide-submit,
+.pv-cta-banner .pv-btn.pv-btn-blue,
+.cta-actions .cta-phone,
+.cta-direct-phone {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 12px 28px !important;
+  border: 2px solid var(--valley-gold-500, #d8b65e) !important;
+  border-radius: 4px !important;
+  color: #260f2a !important;
+  background: linear-gradient(135deg, var(--valley-gold-700, #a98235), var(--valley-gold-100, #f6e4ae) 54%, var(--valley-gold-500, #d8b65e)) !important;
+  box-shadow: 0 4px 16px rgba(169, 130, 53, 0.35) !important;
+  font-family: inherit !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: color .25s ease, background .25s ease, box-shadow .25s ease, transform .25s ease !important;
+}
+
+.pv-btn:not(.pv-btn-primary):not(.pv-btn-gold):not(.pv-btn-teal):not(.pv-btn-blue):not(.pv-btn-outline):not(.pv-btn-outline-light):not(.pv-btn-ink-outline):hover,
+.btn.btn-primary:hover,
+.btn.btn-gold:hover,
+.btn.btn-sky:hover,
+.btn-hero-slide-trigger:hover,
+.btn-hero-slide-submit:hover,
+.pv-cta-banner .pv-btn.pv-btn-blue:hover,
+.cta-actions .cta-phone:hover,
+.cta-direct-phone:hover {
+  color: #ffffff !important;
+  background: #260f2a !important;
+  border-color: var(--valley-gold-500, #d8b65e) !important;
+  box-shadow: 0 8px 24px rgba(38, 15, 42, 0.35) !important;
+  transform: translateY(-2px) !important;
+}
+
+.btn.btn-ghost,
+.btn.btn-outline,
+.btn.btn-ghost-ink {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 12px 28px !important;
+  border: 2px solid var(--valley-plum-700, #512054) !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+  background: var(--valley-plum-700, #512054) !important;
+  box-shadow: 0 4px 16px rgba(81, 32, 84, 0.35) !important;
+  font-family: inherit !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: color .25s ease, background .25s ease, box-shadow .25s ease, transform .25s ease !important;
+}
+
+.btn.btn-ghost:hover,
+.btn.btn-outline:hover,
+.btn.btn-ghost-ink:hover {
+  color: #ffffff !important;
+  background: #1a0a1d !important;
+  border-color: var(--valley-gold-500, #d8b65e) !important;
+  box-shadow: 0 8px 24px rgba(26, 10, 29, 0.4) !important;
+  transform: translateY(-2px) !important;
 }
 
 .btn-cta-primary:hover,
