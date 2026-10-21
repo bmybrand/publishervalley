@@ -1,3 +1,12 @@
+// Keep footer brand icons consistent across legacy page templates. Font Awesome
+// brand glyphs must use `fab`; the older `fa` class renders them as blanks.
+document.querySelectorAll(
+  '.footer-payment i.fa.fa-facebook, .footer-payment i.fa.fa-instagram, .footer-payment i.fa.fa-linkedin'
+).forEach(function (icon) {
+  icon.classList.remove('fa');
+  icon.classList.add('fab');
+});
+
 // Animations call 
 
 // AOS.init({
