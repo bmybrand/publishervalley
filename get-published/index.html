@@ -7,31 +7,82 @@
   <meta name="description" content="Move from manuscript to a professionally prepared print or digital book with editing, design, formatting, publishing, and distribution support from Publishers Valley.">
   <link rel="canonical" href="https://publishervalley.vercel.app/get-published/">
   <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/font-awesome.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/dropdown.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
   <link rel="stylesheet" href="/assets/css/pv-buttons.css">
   <link rel="stylesheet" href="/assets/css/get-published.css">
 </head>
 <body class="pv-landing">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="lp-header">
-    <div class="lp-topline">
-      <div class="lp-container lp-topline-inner">
-        <span>One team from manuscript review to publication</span>
-        <a href="tel:9173846076"><i class="fa fa-phone" aria-hidden="true"></i> (917)-384-6076</a>
+  <header>
+    <section class="top-bar">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center">
+          <div class="col-md-6"><marquee direction="left">Publish your book today and bring your story to readers. Call now for a free consultation.</marquee></div>
+          <div class="col-md-6">
+            <ul class="menu social-icons">
+              <li class="side-bar-one"><a href="tel:9173846076"><i class="fas fa-phone-alt"></i>&nbsp; (917)-384-6076 &nbsp;&nbsp;&nbsp;</a></li>
+              <li><a href="mailto:info@publishersvalley.com"><i class="fas fa-envelope"></i>&nbsp; info@publishersvalley.com</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <div class="mobile-menu">
+      <div class="circle" id="navbar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      <div class="nveMenu text-left">
+        <div class="mobile-cross close-btn-nav" id="navbar"><i class="fas fa-times" aria-hidden="true"></i></div>
+        <div><a href="/" class="logo"><img src="/assets/images/logo.png" alt="Publishers Valley"></a></div>
+        <ul class="navlinks p-0 mt-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-us/">About Us</a></li>
+          <li class="nav-links mobile-dropdown">
+            <a href="javascript:void(0)" class="mobile-dropdown-toggle">Services <i class="fa fa-caret-down"></i></a>
+            <div class="mobile-mega-menu"><ul class="mobile-mega-menu-list">
+              <li><a href="/book-publishing/">Book Publishing</a></li><li><a href="/book-editing/">Book Editing</a></li><li><a href="/book-cover-design/">Book Cover Design</a></li><li><a href="/book-formatting/">Book Formatting</a></li><li><a href="/author-website-design/">Author Website Design</a></li><li><a href="/proofreading-services/">Proofreading Services</a></li><li><a href="/book-marketing/">Book Marketing</a></li><li><a href="/ghost-writing/">Ghost Writing</a></li><li><a href="/audiobook-services/">Audio Book Services</a></li><li><a href="/children-picture-book-publishing/">Children's Picture Book Publishing</a></li>
+            </ul></div>
+          </li>
+          <li><a href="/portfolio/">Portfolio</a></li><li><a href="/testimonials/">Testimonials</a></li><li><a href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
     </div>
-    <div class="lp-container lp-nav">
-      <a class="lp-logo" href="/" aria-label="Publishers Valley home">
-        <img src="/assets/images/logo.png" alt="Publishers Valley">
-      </a>
-      <nav aria-label="Landing page navigation">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#work">Our Work</a>
-        <a href="#faq">FAQs</a>
-      </nav>
-      <a class="pv-btn pv-btn-primary lp-nav-cta" href="#consultation">Get My Publishing Plan</a>
+
+    <div class="header-main">
+      <div class="container"><div class="row">
+        <div class="col-12 col-sm-12 col-md-3"><a href="/" class="logo"><img src="/assets/images/logo.png" alt="Publishers Valley"></a></div>
+        <div class="col-12 col-sm-12 col-md-9"><div class="navbar-menu">
+          <ul class="nav-items">
+            <li class="nav-links"><a href="/">Home</a></li>
+            <li class="nav-links"><a href="/about-us/">About Us</a></li>
+            <li class="nav-links dropdown"><a href="javascript:void(0)">Services <i class="fa fa-caret-down"></i></a>
+              <div class="mega-menu"><div class="mega-menu-content"><div class="row">
+                <div class="col-md-6 border-right"><ul class="mega-menu-list">
+                  <li><a href="/book-publishing/"><div class="text-box"><span>Book Publishing</span><p>Complete publishing support for your manuscript.</p></div></a></li>
+                  <li><a href="/book-editing/"><div class="text-box"><span>Book Editing</span><p>Professional editing tailored to your book.</p></div></a></li>
+                  <li><a href="/book-cover-design/"><div class="text-box"><span>Book Cover Design</span><p>Original covers shaped for your genre.</p></div></a></li>
+                  <li><a href="/book-formatting/"><div class="text-box"><span>Book Formatting</span><p>Reader-friendly print and digital layouts.</p></div></a></li>
+                  <li><a href="/author-website-design/"><div class="text-box"><span>Author Website Design</span><p>A professional home for your author brand.</p></div></a></li>
+                </ul></div>
+                <div class="col-md-6"><ul class="mega-menu-list">
+                  <li><a href="/proofreading-services/"><div class="text-box"><span>Proofreading Services</span><p>A careful final review before publication.</p></div></a></li>
+                  <li><a href="/book-marketing/"><div class="text-box"><span>Book Marketing</span><p>Practical support for reaching readers.</p></div></a></li>
+                  <li><a href="/ghost-writing/"><div class="text-box"><span>Ghost Writing</span><p>Turn your ideas into a finished manuscript.</p></div></a></li>
+                  <li><a href="/audiobook-services/"><div class="text-box"><span>Audio Book Services</span><p>Professional narration and audio production.</p></div></a></li>
+                  <li><a href="/children-picture-book-publishing/"><div class="text-box"><span>Children's Book Publishing</span><p>Publishing support for young readers.</p></div></a></li>
+                </ul></div>
+              </div></div></div>
+            </li>
+            <li class="nav-links"><a href="/portfolio/">Portfolio</a></li><li class="nav-links"><a href="/testimonials/">Testimonials</a></li><li class="nav-links"><a href="/contact-us/">Contact Us</a></li>
+          </ul>
+          <div class="nav-btns"><button class="contact" type="button" onclick="document.querySelector('#consultation').scrollIntoView({behavior:'smooth'})">Get Started</button></div>
+        </div></div>
+      </div></div>
     </div>
   </header>
 
@@ -114,12 +165,12 @@
           <p>Start with one service or coordinate the full production journey with a single team.</p>
         </div>
         <div class="lp-service-grid">
-          <article><span>01</span><i class="fa fa-file-text-o" aria-hidden="true"></i><h3>Manuscript Assessment</h3><p>Clarify what is ready, what needs attention, and which production steps should come next.</p></article>
-          <article><span>02</span><i class="fa fa-pencil" aria-hidden="true"></i><h3>Editing &amp; Proofreading</h3><p>Strengthen structure, clarity, consistency, grammar, and final-page accuracy while preserving your voice.</p></article>
-          <article><span>03</span><i class="fa fa-picture-o" aria-hidden="true"></i><h3>Cover Design</h3><p>Create an original, genre-aware cover designed to work across digital listings and printed editions.</p></article>
-          <article><span>04</span><i class="fa fa-book" aria-hidden="true"></i><h3>Interior Formatting</h3><p>Prepare readable, polished layouts for ebook, paperback, or hardcover editions.</p></article>
-          <article><span>05</span><i class="fa fa-cogs" aria-hidden="true"></i><h3>Publishing Setup</h3><p>Organize metadata, identifiers, production files, and platform requirements for a smoother launch.</p></article>
-          <article><span>06</span><i class="fa fa-globe" aria-hidden="true"></i><h3>Distribution Guidance</h3><p>Plan how your print and digital editions can reach appropriate retail and library channels.</p></article>
+          <article><span>01</span><i class="fas fa-file-alt" aria-hidden="true"></i><h3>Manuscript Assessment</h3><p>Clarify what is ready, what needs attention, and which production steps should come next.</p></article>
+          <article><span>02</span><i class="fas fa-pencil-alt" aria-hidden="true"></i><h3>Editing &amp; Proofreading</h3><p>Strengthen structure, clarity, consistency, grammar, and final-page accuracy while preserving your voice.</p></article>
+          <article><span>03</span><i class="fas fa-image" aria-hidden="true"></i><h3>Cover Design</h3><p>Create an original, genre-aware cover designed to work across digital listings and printed editions.</p></article>
+          <article><span>04</span><i class="fas fa-book" aria-hidden="true"></i><h3>Interior Formatting</h3><p>Prepare readable, polished layouts for ebook, paperback, or hardcover editions.</p></article>
+          <article><span>05</span><i class="fas fa-cogs" aria-hidden="true"></i><h3>Publishing Setup</h3><p>Organize metadata, identifiers, production files, and platform requirements for a smoother launch.</p></article>
+          <article><span>06</span><i class="fas fa-globe-americas" aria-hidden="true"></i><h3>Distribution Guidance</h3><p>Plan how your print and digital editions can reach appropriate retail and library channels.</p></article>
         </div>
       </div>
     </section>
@@ -151,9 +202,9 @@
           <h2>Professional support without taking control away from the author</h2>
           <p>Your manuscript, creative direction, and final decisions stay at the center of the project. Our role is to bring specialist execution and publishing guidance to the vision you already own.</p>
           <div class="lp-value-list">
-            <div><i class="fa fa-shield" aria-hidden="true"></i><span><strong>Manuscript ownership</strong>Your work remains under your control.</span></div>
-            <div><i class="fa fa-comments-o" aria-hidden="true"></i><span><strong>Clear communication</strong>Review points keep you involved throughout production.</span></div>
-            <div><i class="fa fa-sliders" aria-hidden="true"></i><span><strong>Flexible scope</strong>Use individual services or create one coordinated plan.</span></div>
+            <div><i class="fas fa-shield-alt" aria-hidden="true"></i><span><strong>Manuscript ownership</strong>Your work remains under your control.</span></div>
+            <div><i class="fas fa-comments" aria-hidden="true"></i><span><strong>Clear communication</strong>Review points keep you involved throughout production.</span></div>
+            <div><i class="fas fa-sliders-h" aria-hidden="true"></i><span><strong>Flexible scope</strong>Use individual services or create one coordinated plan.</span></div>
           </div>
           <a class="pv-btn pv-btn-primary" href="#consultation">Discuss My Manuscript</a>
         </div>
@@ -217,17 +268,37 @@
     </section>
   </main>
 
-  <footer class="lp-footer">
-    <div class="lp-container lp-footer-grid">
-      <div><a class="lp-logo" href="/"><img src="/assets/images/logo.png" alt="Publishers Valley"></a><p>Thoughtful publishing support for authors ready to move their books forward.</p></div>
-      <div><strong>Explore</strong><a href="/about-us/">About Us</a><a href="/portfolio/">Portfolio</a><a href="/testimonials/">Testimonials</a></div>
-      <div><strong>Services</strong><a href="/book-publishing/">Book Publishing</a><a href="/book-editing/">Book Editing</a><a href="/book-cover-design/">Cover Design</a></div>
-      <div><strong>Contact</strong><a href="tel:9173846076">(917)-384-6076</a><a href="mailto:info@publishersvalley.com">info@publishersvalley.com</a><div class="lp-social"><a href="https://www.facebook.com/publishersvalley" aria-label="Facebook"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/publishers__valley/" aria-label="Instagram"><i class="fa fa-instagram"></i></a><a href="https://www.linkedin.com/company/publishers-valley/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></div></div>
+  <footer>
+    <div class="footer">
+      <div class="container"><div class="row">
+        <div class="col-md-6 cols-m-4 col-lg-4 col-12"><div class="footer-logo">
+          <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Publishers Valley"></a>
+          <p>Publishers Valley brings editing, design, formatting, and publishing support together so authors can move from manuscript to finished book with clarity.</p>
+          <img src="/assets/images/payment-method.webp" class="img-fluid" alt="Accepted payment methods">
+        </div></div>
+        <div class="col-md-6 cols-m-3 col-lg-2 col-12"><div class="footer-services"><h3>Quick Links</h3><ul>
+          <li><a href="/">Home</a></li><li><a href="/about-us/">About Us</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="/testimonials/">Testimonials</a></li><li><a href="/contact-us/">Contact Us</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-conditions/">Terms &amp; Conditions</a></li>
+        </ul></div></div>
+        <div class="col-md-6 cols-m-3 col-lg-3 col-12"><div class="footer-services"><h3>Services</h3><ul>
+          <li><a href="/book-publishing/">Book Publishing</a></li><li><a href="/book-editing/">Book Editing</a></li><li><a href="/book-cover-design/">Book Cover Design</a></li><li><a href="/ghost-writing/">Ghostwriting</a></li><li><a href="/book-marketing/">Book Marketing</a></li><li><a href="/book-formatting/">Book Formatting</a></li>
+        </ul></div></div>
+        <div class="col-md-6 cols-m-4 col-lg-3 col-12"><div class="footer-payment"><h3>Contact Us:</h3>
+          <div class="address-bar"><div class="address-icon"><i class="fa fa-map-marker"></i></div><div class="address-text"><a href="#">6307 Channelbrook Ln Spring, TX 77379</a></div></div>
+          <div class="address-bar"><div class="address-icon"><i class="fa fa-phone"></i></div><div class="address-text"><a href="tel:9173846076">(917)-384-6076</a></div></div>
+          <div class="address-bar"><div class="address-icon"><i class="fa fa-envelope"></i></div><div class="address-text"><a href="mailto:info@publishersvalley.com">info@publishersvalley.com</a></div></div>
+          <ul><li><a href="https://www.facebook.com/publishersvalley" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li><li><a href="https://www.instagram.com/publishers__valley/" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/company/publishers-valley/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li></ul>
+        </div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-copyright"><h3>All Rights Reserved <span id="year"></span> - Publishers Valley</h3></div></div>
+      </div>
     </div>
-    <div class="lp-container lp-footer-bottom"><span>&copy; <span id="year"></span> Publishers Valley. All rights reserved.</span><span><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-conditions/">Terms &amp; Conditions</a></span></div>
   </footer>
 
   <div class="lp-mobile-cta"><a href="tel:9173846076"><i class="fa fa-phone" aria-hidden="true"></i> Call</a><a href="#consultation">Get My Plan</a></div>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/font.js"></script>
+  <script src="/assets/js/custom.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.querySelectorAll('a[href^="#"]').forEach(function (link) {
