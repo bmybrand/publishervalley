@@ -2737,7 +2737,9 @@ button.chat {
   position: relative;
   width: 100%;
   max-width: 700px;
-  background: #111 url('/assets/images/cta-sec-1-bg.webp') no-repeat center center;
+  background:
+    linear-gradient(135deg, rgba(38, 15, 42, 0.82), rgba(81, 32, 84, 0.72)),
+    url('/assets/images/cta-sec-1-bg.webp') no-repeat center center;
   background-size: cover;
   border-radius: 15px;
   overflow: hidden;
@@ -2761,8 +2763,7 @@ button.chat {
 .launch-modal .modal-body {
   position: relative;
   padding: 50px 40px;
-  background: rgba(0, 0, 0, 0.75);
-  /* Dark overlay over background image */
+  background: linear-gradient(180deg, rgba(38, 15, 42, 0.28), rgba(38, 15, 42, 0.58));
   text-align: center;
   color: #fff;
   overflow-y: auto;
