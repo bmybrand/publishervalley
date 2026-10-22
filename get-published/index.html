@@ -80,7 +80,7 @@
             </li>
             <li class="nav-links"><a href="/portfolio/">Portfolio</a></li><li class="nav-links"><a href="/testimonials/">Testimonials</a></li><li class="nav-links"><a href="/contact-us/">Contact Us</a></li>
           </ul>
-          <div class="nav-btns"><button class="contact" type="button" onclick="document.querySelector('#consultation').scrollIntoView({behavior:'smooth'})">Get Started</button></div>
+          <div class="nav-btns"><button class="contact js-open-launch-modal" type="button" aria-haspopup="dialog" aria-controls="launchBookModal">Get Started</button></div>
         </div></div>
       </div></div>
     </div>
@@ -302,6 +302,31 @@
     </div>
   </footer>
 
+  <div id="launchBookModal" class="launch-modal" role="dialog" aria-modal="true" aria-labelledby="launchBookModalTitle" aria-hidden="true">
+    <div class="modal-overlay" data-close-launch-modal></div>
+    <div class="modal-content-wrapper" role="document">
+      <button class="modal-close" type="button" aria-label="Close consultation form" data-close-launch-modal><i class="fas fa-times" aria-hidden="true"></i></button>
+      <div class="modal-body">
+        <div class="modal-header-text">
+          <h2 class="modal-title" id="launchBookModalTitle">Launch <br> Your <span class="highlight">Book</span></h2>
+          <div class="discount-banner"><span>50% Discount</span></div>
+          <p class="modal-subtitle">Tell us about your manuscript and receive guidance on the next publishing steps.</p>
+        </div>
+        <form id="launchBookForm" method="POST" action="/email" class="modal-form">
+          <input type="hidden" name="site_url" value="https://publishervalley.vercel.app/get-published/">
+          <input type="hidden" name="formType" value="Get Published Landing Page Popup">
+          <div class="form-group"><input type="text" name="name" placeholder="Full Name *" autocomplete="name" required></div>
+          <div class="form-row">
+            <div class="form-group half"><input type="tel" name="phone" placeholder="Phone *" autocomplete="tel" required></div>
+            <div class="form-group half"><input type="email" name="email" placeholder="Email Address *" autocomplete="email" required></div>
+          </div>
+          <div class="form-group"><textarea name="message" placeholder="Tell us briefly about your book and the support you need." required></textarea></div>
+          <button type="submit" class="btn-submit-modal">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <div class="lp-mobile-cta"><a href="tel:9173846076"><i class="fa fa-phone" aria-hidden="true"></i> Call</a><a href="#consultation">Get My Plan</a></div>
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/jquery-3.3.1.min.js"></script>
@@ -315,6 +340,32 @@
         if (target) { event.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
       });
     });
+
+    (function () {
+      var modal = document.getElementById('launchBookModal');
+      var openButton = document.querySelector('.js-open-launch-modal');
+      var closeButtons = modal.querySelectorAll('[data-close-launch-modal]');
+
+      function openModal() {
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        window.setTimeout(function () { modal.querySelector('input[name="name"]').focus(); }, 50);
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        openButton.focus();
+      }
+
+      openButton.addEventListener('click', openModal);
+      closeButtons.forEach(function (button) { button.addEventListener('click', closeModal); });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.classList.contains('active')) closeModal();
+      });
+    }());
   </script>
 </body>
 </html>
