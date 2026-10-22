@@ -597,6 +597,92 @@ body {
     }
 }
 
+/* Legal pages share the same plum-and-gold presentation as the main site. */
+.legal-page .breadcrump-sec.hero-publishing {
+    position: relative;
+    min-height: 280px;
+    padding: 104px 0 74px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 82% 18%, rgba(216, 182, 94, 0.2), transparent 28%),
+        linear-gradient(135deg, var(--valley-plum-950), var(--valley-plum-700)) !important;
+}
+
+.legal-page .breadcrump-sec.hero-publishing::after {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 36px;
+    width: 92px;
+    height: 2px;
+    background: var(--valley-gold-500);
+}
+
+.legal-page .breadcrump-sec .main-about h1 {
+    color: #fff !important;
+    font-size: clamp(40px, 6vw, 68px) !important;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+}
+
+.legal-page .privacy-policy-content,
+.legal-page .terms-conditions-content {
+    padding: 76px 0 !important;
+    background: linear-gradient(180deg, var(--valley-ivory), #fffaf0);
+}
+
+.legal-page .content-box {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: clamp(28px, 5vw, 58px);
+    border: 1px solid rgba(81, 32, 84, 0.14);
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 22px 55px rgba(38, 15, 42, 0.1);
+}
+
+.legal-page .content-box h3 {
+    margin: 34px 0 12px;
+    padding-left: 14px;
+    border-left: 3px solid var(--valley-gold-500);
+    color: var(--valley-plum-900) !important;
+    font-size: clamp(21px, 2.5vw, 27px);
+    line-height: 1.25;
+}
+
+.legal-page .content-box h3:first-child {
+    margin-top: 0;
+}
+
+.legal-page .content-box p,
+.legal-page .content-box li {
+    color: #514653 !important;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.legal-page .content-box ul {
+    margin: 10px 0 20px;
+    padding-left: 24px;
+    list-style: disc;
+}
+
+@media (max-width: 767px) {
+    .legal-page .breadcrump-sec.hero-publishing {
+        min-height: 220px;
+        padding: 82px 0 56px;
+    }
+
+    .legal-page .privacy-policy-content,
+    .legal-page .terms-conditions-content {
+        padding: 42px 0 !important;
+    }
+
+    .legal-page .content-box {
+        border-radius: 16px;
+    }
+}
+
 /* The testimonial artwork is a transparent product mockup, not a crop. */
 .main-blob-frame {
     width: min(100%, 620px);

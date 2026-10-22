@@ -2885,7 +2885,7 @@ button.chat {
 }
 
 .launch-modal .btn-submit-modal:hover {
-  background: #e08818;
+  background: #efd68b;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(216, 182, 94, 0.4);
 }

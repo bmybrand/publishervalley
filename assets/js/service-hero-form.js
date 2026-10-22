@@ -50,6 +50,8 @@
         <label><input type="checkbox" name="services" value="Illustration"> Illustration</label>
         <label><input type="checkbox" name="services" value="Book Publishing"> Book Publishing</label>
         <label><input type="checkbox" name="services" value="Author Website"> Author Website</label>
+        <label><input type="checkbox" name="services" value="Book Marketing"> Book Marketing</label>
+        <label><input type="checkbox" name="services" value="Audiobook Production"> Audiobook Production</label>
       </div>
     </fieldset>
     <div class="${fieldClass}">
@@ -99,6 +101,34 @@
     }
   };
 
+  const serviceByPath = {
+    "/ghost-writing/": "Ghostwriting",
+    "/book-writing/": "Ghostwriting",
+    "/book-editing/": "Book Editing",
+    "/book-developmental-editing-services/": "Book Editing",
+    "/book-line-editing-services/": "Book Editing",
+    "/proofreading-services/": "Proofreading",
+    "/book-cover-design/": "Cover Design",
+    "/book-formatting/": "Interior Formatting",
+    "/children-picture-book-illustration/": "Illustration",
+    "/children-picture-book-publishing/": "Book Publishing",
+    "/book-publishing/": "Book Publishing",
+    "/book-publishing-and-ghostwriting-in-houston-tx/": "Book Publishing",
+    "/author-website-design/": "Author Website",
+    "/book-marketing/": "Book Marketing",
+    "/audiobook-services/": "Audiobook Production",
+  };
+
+  const selectCurrentService = (form) => {
+    const path = window.location.pathname.replace(/\/+$/, "/") || "/";
+    const currentService = serviceByPath[path];
+    if (!currentService) return;
+
+    const checkbox = [...form.querySelectorAll('input[name="services"]')]
+      .find((input) => input.value === currentService);
+    if (checkbox) checkbox.checked = true;
+  };
+
   heroes.forEach((hero) => {
     const card = hero.querySelector(".hero-offer-form");
     let form = card?.querySelector("form") || hero.querySelector('form[action="email"]');
@@ -127,6 +157,7 @@
 
     if (form) {
       updateForm(form, siteUrl);
+      selectCurrentService(form);
       form.closest(".hero-offer-form")?.setAttribute("data-service-form-ready", "");
     }
   });
